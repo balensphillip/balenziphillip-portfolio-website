@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="dark" lang="en">
 <head>
@@ -15,19 +14,12 @@
         theme: {
           extend: {
             colors: {
-              primary: "#1173d4",
-              "background-light": "#f6f7f8",
-              "background-dark": "#101922",
-            },
-            fontFamily: {
-              display: ["Inter"],
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
+              primary: "#1173d4", "background-light": "#f6f7f8", "background-dark": "#101922", 
+              },
+              fontFamily: { display: ["Inter"],  
+              },
+              borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem",  xl: "0.75rem", full: "9999px",
+              }, 
           },
         },
       };
@@ -36,22 +28,8 @@
         .project-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
         .project-card:hover {
             transform: translateY(-5px);
-        }
-        
-        .active-tab {
-            color: #1173d4;
-            font-weight: bold;
-        }
-        
-        .section-hidden {
-            display: none;
-        }
-        
-        .section-visible {
-            display: flex;
         }
     </style>
 </head>
@@ -63,12 +41,15 @@
             <span class="text-2xl font-black text-primary">BP</span>
           </div>
           <nav class="flex items-center gap-8">
-            <a id="about-tab" class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-opacity hover:opacity-90 inline-flex items-center gap-2" href="#">About me</a>
-            <a id="projects-tab" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Projects</a>
+            <button id="about-tab" class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-all hover:opacity-90 inline-flex items-center gap-2">
+              About me
+            </button>
+            <button id="projects-tab" class="rounded-lg px-4 py-2 text-sm font-bold text-gray-600 dark:text-gray-300 bg-transparent transition-all hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-primary">
+              Projects
+            </button>
           </nav>
         </header>
-        
-        <main id="about-section" class="section-visible flex flex-1 items-center justify-center py-1 lg:py-8">
+        <main id="about-section" class="flex flex-1 items-center justify-center py-1 lg:py-8">
           <div class="container mx-auto flex max-w-5xl flex-col items-center gap-12 px-4 text-center">
             <div class="flex flex-col items-center gap-2 w-[80%]">
                 <img src="./assets/Passport Photo.jpg" alt="Profile Photo" class="w-64 h-64 rounded-full border-4 border-background-light dark:border-background-dark"/>
@@ -107,20 +88,18 @@
             </div>
           </div>
         </main>
-        
-        <!-- <main id="projects-section" class="section-visible flex flex-1 items-center justify-center py-8 lg:py-12">
+        <main id="projects-section" class="hidden flex flex-1 items-center justify-center py-8 lg:py-12">
           <div class="container mx-auto max-w-6xl px-4">
             <h1 class="text-4xl font-black tracking-tighter text-gray-900 dark:text-white mb-12 text-center">My Projects</h1>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700">
                 <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
-                  <span class="text-white text-xl font-bold">E-Commerce Platform</span>
+                  <span class="text-white text-xl font-bold">Personal Health Dashboard</span>
                 </div>
                 <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Online Store</h3>
+                  <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Health App</h3>
                   <p class="text-gray-600 dark:text-gray-300 mb-4">
-                    A full-featured e-commerce platform with product catalog, shopping cart, and payment integration.
+                    A full-featured health platform with dieting, nutrition, biodata, medical appointments and workout schedules.
                   </p>
                   <div class="flex flex-wrap gap-2 mb-4">
                     <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">React</span>
@@ -133,36 +112,14 @@
                   </div>
                 </div>
               </div>
-              
               <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700">
                 <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
-                  <span class="text-white text-xl font-bold">Task Manager</span>
+                  <span class="text-white text-xl font-bold">Resource Schedular</span>
                 </div>
                 <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Productivity App</h3>
+                  <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Resource Management App</h3>
                   <p class="text-gray-600 dark:text-gray-300 mb-4">
-                    A task management application with drag-and-drop functionality, deadlines, and team collaboration features.
-                  </p>
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">JavaScript</span>
-                    <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs px-3 py-1 rounded-full">ASP.NET</span>
-                    <span class="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs px-3 py-1 rounded-full">SQL Server</span>
-                  </div>
-                  <div class="flex gap-3">
-                    <a href="#" class="text-sm font-medium text-primary hover:underline">Live Demo</a>
-                    <a href="#" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:underline">Source Code</a>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700">
-                <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
-                  <span class="text-white text-xl font-bold">Weather Dashboard</span>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Weather App</h3>
-                  <p class="text-gray-600 dark:text-gray-300 mb-4">
-                    A responsive weather dashboard that displays current conditions and forecasts using a weather API.
+                    A resource management application with a resource inventory, users and schedule on how, when, what and why to use the resources.
                   </p>
                   <div class="flex flex-wrap gap-2 mb-4">
                     <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">HTML/CSS</span>
@@ -175,45 +132,31 @@
                   </div>
                 </div>
               </div>
+              <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700">
+                <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
+                  <span class="text-white text-xl font-bold">Supply Chain Optimizer</span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Business App</h3>
+                  <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    A business app that optimizes supply chain and logistics resources and processes.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">React</span>
+                    <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs px-3 py-1 rounded-full">C#</span>
+                    <span class="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs px-3 py-1 rounded-full">SQL Server</span>
+                </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="text-sm font-medium text-primary hover:underline">Live Demo</a>
+                    <a href="#" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:underline">Source Code</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </main> -->
+        </main>
       </div>
     </div>
-    
-    <script src="index.js">
-        document.addEventListener('DOMContentLoaded', function() {
-            const aboutTab = document.getElementById('about-tab');
-            const projectsTab = document.getElementById('projects-tab');
-            const aboutSection = document.getElementById('about-section');
-            const projectsSection = document.getElementById('projects-section');
-            
-            // Function to switch tabs
-            function switchToProjects() {
-                aboutSection.classList.remove('section-visible');
-                projectsSection.classList.remove('section-hidden');
-                projectsSection.classList.add('section-visible');
-                aboutTab.classList.remove('bg-primary', 'text-white');
-                aboutTab.classList.add('text-gray-600', 'dark:text-gray-300');
-                projectsTab.classList.remove('text-gray-600', 'dark:text-gray-300');
-                projectsTab.classList.add('bg-primary', 'text-white');
-            }
-            
-            function switchToAbout() {
-                projectsSection.classList.remove('section-visible');
-                projectsSection.classList.add('section-hidden');
-                aboutSection.classList.remove('section-hidden');
-                aboutSection.classList.add('section-visible');
-                
-                projectsTab.classList.remove('bg-primary', 'text-white');
-                projectsTab.classList.add('text-gray-600', 'dark:text-gray-300');
-                aboutTab.classList.remove('text-gray-600', 'dark:text-gray-300');
-                aboutTab.classList.add('bg-primary', 'text-white');
-            }
-            
-            // Event listeners for tabs
-            projectsTab.addEventListener('click', switchToProjects);
-            aboutTab.addEventListener('click', switchToAbout);
-        });</script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
