@@ -23,21 +23,14 @@
       };
     </script>
   </head>
-  <body class="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+  <body class="font-display text-gray-800 dark:text-gray-200 min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-200 
+           dark:from-gray-800 dark:via-gray-950 dark:to-blue-950 transition-colors duration-900 ease-in-out">
     <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
       <div class="flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-800 px-10 py-4">
+        <header class="flex items-center justify-center whitespace-nowrap border-b border-gray-200 dark:border-gray-800 px-10 py-4">
           <div class="flex items-center gap-3">
-            <h2 class="text-lg font-bold text-gray-900 dark:text-white"> BP </h2>
+             <h2 class="text-2xl font-black tracking-tighter text-gray-900 dark:text-white sm:text-3xl">Balenzi Phillip</h2>
           </div>
-            <nav class="flex items-center gap-8">
-            <button id="about-tab" class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-all hover:opacity-90 inline-flex items-center gap-2">
-              About me
-            </button>
-            <button id="projects-tab" class="rounded-lg px-4 py-2 text-sm font-bold text-gray-600 dark:text-gray-300 bg-transparent transition-all hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-primary">
-              Projects
-            </button>
-          </nav>
         </header>
         <main class="flex flex-1 items-center justify-center py-0 lg:py-8">
           <div class="container mx-auto grid max-w-5xl gap-8 px-4 py-2 md:grid-cols-2 lg:gap-12">
@@ -46,8 +39,7 @@
             </div>
             <div class="flex flex-col items-center gap-6 text-center md:text-left">
               <div class="space-y-4">
-                <h2 class="text-3xl font-black tracking-tighter text-gray-900 dark:text-white sm:text-4xl">Balenzi Phillip</h2>
-                <p class="text-2xl font-bold text-gray-600 dark:text-gray-400">Software Developer </p>
+                <p class="text-2xl font-bold text-gray-700 dark:text-gray-400">Software Developer </p>
               </div>
               <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300 md:text-lg">
                 I am skilled in building scalable and efficient applications.
@@ -92,118 +84,112 @@
             </div>
             <div class="flex flex-col gap-6 md:col-span-2 py-0 lg:py-8">
               <h1 class="text-3xl font-bold text-center text-gray-900 dark:text-white md:text-4xl">Featured Projects</h2>
-              <div class="flex flex-col gap-6 md:flex-row md:gap-4">
-                <div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md dark:border-gray-800 dark:bg-gray-900/50">
-                  <div
-                    class="h-48 bg-cover bg-center"
-                    style="
-                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeXRKh6X_by0_8g7tDP65tXF7XZ-wUTWRrU9HDB2fEln64QEDbPmRrLj4K9AM0L-Ti9ceBcJlEFidAgssc8TGJg0dSXKk1qF63h9IfnYeCRgWBpf_16q0H_K7mF72KaacqtNTjXurKCfodIL8lW_w3s-5HjCtkf-Sn7rdVw07mGaUYzHBu6N3qxOyFArxhzwRYYK4rLb_JMBDK9yW6elsbjYEGUg9yEc8o5DMX2d3kx30984AcTMFbsyw3O-MohKj1tXzuTPu8Okw');
-                    "
-                  ></div>
-                  <div class="flex flex-1 flex-col gap-4 p-6">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Personal Health Dashboard</h3>
-                    <p class="text-gray-600 dark:text-gray-400">
-                      A full-featured health platform with dieting, nutrition, biodata, medical appointments and workout schedules.
-                    </p>
-                    <div class="mt-auto flex items-center justify-end">
-                      <a
-                        class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
-                        href="#"
-                      >
-                        Source Code
-                        <svg
-                          class="h-4 w-4"
-                          fill="none"
-                          height="16"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          viewBox="0 0 24 24"
-                          width="16"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M5 12h14"></path>
-                          <path d="m12 5 7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md dark:border-gray-800 dark:bg-gray-900/50">
                 <div
-                  class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md dark:border-gray-800 dark:bg-gray-900/50"
-                >
-                  <div
                     class="h-48 bg-cover bg-center"
-                     style="
-                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeXRKh6X_by0_8g7tDP65tXF7XZ-wUTWRrU9HDB2fEln64QEDbPmRrLj4K9AM0L-Ti9ceBcJlEFidAgssc8TGJg0dSXKk1qF63h9IfnYeCRgWBpf_16q0H_K7mF72KaacqtNTjXurKCfodIL8lW_w3s-5HjCtkf-Sn7rdVw07mGaUYzHBu6N3qxOyFArxhzwRYYK4rLb_JMBDK9yW6elsbjYEGUg9yEc8o5DMX2d3kx30984AcTMFbsyw3O-MohKj1tXzuTPu8Okw');">
-                  </div>
-                  <div class="flex flex-1 flex-col gap-4 p-6">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                      Resource Schedular
-                    </h3>
-                    <p class="text-gray-600 dark:text-gray-400">
-                      A resource management application with a resource inventory, users and schedule on how, when, what and why to use the resources.
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeXRKh6X_by0_8g7tDP65tXF7XZ-wUTWRrU9HDB2fEln64QEDbPmRrLj4K9AM0L-Ti9ceBcJlEFidAgssc8TGJg0dSXKk1qF63h9IfnYeCRgWBpf_16q0H_K7mF72KaacqtNTjXurKCfodIL8lW_w3s-5HjCtkf-Sn7rdVw07mGaUYzHBu6N3qxOyFArxhzwRYYK4rLb_JMBDK9yW6elsbjYEGUg9yEc8o5DMX2d3kx30984AcTMFbsyw3O-MohKj1tXzuTPu8Okw');"
+                ></div>
+                <div class="flex flex-1 flex-col items-center justify-center gap-4 p-6">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Personal Health Dashboard</h3>
+                    <p class="text-gray-600 dark:text-gray-400 flex-grow items-center justify-center">
+                        A full-featured health platform with dieting, nutrition, biodata, medical appointments and workout schedules.
                     </p>
                     <div class="mt-auto flex items-center justify-end">
-                      <a class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline" href="#">
-                        Source Code
-                        <svg class="h-4 w-4" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M5 12h14"></path>
-                          <path d="m12 5 7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md dark:border-gray-800 dark:bg-gray-900/50">
-                  <div class="h-48 bg-cover bg-center"  style="
-                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeXRKh6X_by0_8g7tDP65tXF7XZ-wUTWRrU9HDB2fEln64QEDbPmRrLj4K9AM0L-Ti9ceBcJlEFidAgssc8TGJg0dSXKk1qF63h9IfnYeCRgWBpf_16q0H_K7mF72KaacqtNTjXurKCfodIL8lW_w3s-5HjCtkf-Sn7rdVw07mGaUYzHBu6N3qxOyFArxhzwRYYK4rLb_JMBDK9yW6elsbjYEGUg9yEc8o5DMX2d3kx30984AcTMFbsyw3O-MohKj1tXzuTPu8Okw');
-                    ">
-                </div>
-                  <div class="flex flex-1 flex-col gap-4 p-6">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                      Supply Chain Optimizer
-                    </h3>
-                    <p class="text-gray-600 dark:text-gray-400">
-                      A business app that optimizes supply chain and logistics resources and processes.
-                    </p>
-                    <div class="mt-auto flex items-center justify-end">
-                      <a
-                        class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
-                        href="#"
-                      >
-                        Source Code
-                        <svg
-                          class="h-4 w-4"
-                          fill="none"
-                          height="16"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          viewBox="0 0 24 24"
-                          width="16"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <a
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400"
+                            href="#"
                         >
-                          <path d="M5 12h14"></path>
-                          <path d="m12 5 7 7-7 7"></path>
-                        </svg>
-                      </a>
+                            Source Code
+                            <svg
+                                class="h-4 w-4"
+                                fill="none"
+                                height="16"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
+            <div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md dark:border-gray-800 dark:bg-gray-900/50">
+                <div
+                    class="h-48 bg-cover bg-center"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeXRKh6X_by0_8g7tDP65tXF7XZ-wUTWRrU9HDB2fEln64QEDbPmRrLj4K9AM0L-Ti9ceBcJlEFidAgssc8TGJg0dSXKk1qF63h9IfnYeCRgWBpf_16q0H_K7mF72KaacqtNTjXurKCfodIL8lW_w3s-5HjCtkf-Sn7rdVw07mGaUYzHBu6N3qxOyFArxhzwRYYK4rLb_JMBDK9yW6elsbjYEGUg9yEc8o5DMX2d3kx30984AcTMFbsyw3O-MohKj1tXzuTPu8Okw');"
+                ></div>
+                <div class="flex flex-1 flex-col items-center justify-center gap-4 p-6">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                        Resource Scheduler
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400 flex-grow items-center justify-center">
+                        A resource management application with a resource inventory, users and schedule on how, when, what and why to use the resources.
+                    </p>
+                    <div class="mt-auto flex items-center justify-end">
+                        <a class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400" href="#">
+                            Source Code
+                            <svg class="h-4 w-4" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md dark:border-gray-800 dark:bg-gray-900/50">
+                <div 
+                    class="h-48 bg-cover bg-center"  
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeXRKh6X_by0_8g7tDP65tXF7XZ-wUTWRrU9HDB2fEln64QEDbPmRrLj4K9AM0L-Ti9ceBcJlEFidAgssc8TGJg0dSXKk1qF63h9IfnYeCRgWBpf_16q0H_K7mF72KaacqtNTjXurKCfodIL8lW_w3s-5HjCtkf-Sn7rdVw07mGaUYzHBu6N3qxOyFArxhzwRYYK4rLb_JMBDK9yW6elsbjYEGUg9yEc8o5DMX2d3kx30984AcTMFbsyw3O-MohKj1tXzuTPu8Okw');">
+                </div>
+                <div class="flex flex-1 flex-col items-center justify-center gap-4 p-6">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                        Supply Chain Optimizer
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400 flex-grow items-center justify-center">
+                        A business app that optimizes supply chain and logistics resources and processes.
+                    </p>
+                    <div class="mt-auto flex items-center justify-end">
+                        <a
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:underline dark:text-blue-400"
+                            href="#"
+                        >
+                            Source Code
+                            <svg
+                                class="h-4 w-4"
+                                fill="none"
+                                height="16"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                width="16"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+            <footer class="md:col-span-2 text-center py-6">
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                © 2025 Balenzi Phillip. All rights reserved.
+              </p>
           </div>
           </div>
         </main>
       </div>
     </div>
   </body>
-</html>
-
-
-   
-              
-              
+</html>              
